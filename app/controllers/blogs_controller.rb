@@ -9,7 +9,7 @@ class BlogsController < ApplicationController
     @blog = Blog.new
   end
   def create
-    @blog = Blog.create(blog_params)
+    @blog = Blog.new(blog_params)
 
     if params[:back]
           render :new
